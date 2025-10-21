@@ -8,6 +8,8 @@ import { MatButton, MatFabButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { TodoDto } from './todo.dto';
 
+const MODEL = 'Llama-3.2-3B-Instruct-q4f32_1-MLC';
+
 @Component({
   selector: 'app-todo',
   imports: [
@@ -36,11 +38,11 @@ export class Todo implements OnInit {
   }
 
   async* inferWebLLM(userPrompt: string): AsyncGenerator<string> {
-    // LAB #3, #7, #8, #9
+    // LAB #3, #7, #8
   }
 
   async* inferPromptApi(userPrompt: string) {
-    // LAB #12
+    // LAB #11
   }
 
   addTodo() {
